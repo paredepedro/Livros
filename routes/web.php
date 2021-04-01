@@ -13,6 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/home-page', function () {
+    return view('homepage');
+});
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/register', function () {
+    return view('register');
+});
+Route::get('/recover-password', function () {
+    return view('rPassword');
+});
+Route::get('/recover-password-code', function () {
+    return view('rPasswordCode');
+});
+Route::get('/recover-password-new', function () {
+    return view('rPasswordInsert');
 });
