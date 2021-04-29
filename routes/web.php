@@ -14,20 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/home-page', function () {
-    return view('homepage');
+    return view('navegacao.homepage');
 });
-Route::get('/login', function () {
-    return view('login');
+
+route::prefix('usuario')->groupe(function(){
+    Route::get('/login', 'App\Http\Controllers\UsuarioController@Exibir_login')->name('exibir-login');
+
+    Route::get('/register', 'App\Http\Controllers\UsuarioController@Exibir_register')->name('exibir-register');
+
+    Route::get('/recover-password', 'App\Http\Controllers\UsuarioController@Exibir_recover_password')->name('exibir-recover-password');
+
+    Route::get('/recover-password-code', 'App\Http\Controllers\UsuarioController@Exibir_recover_password_code')->name('exibir-recover-password-code');
+
+    Route::get('/recover-password-new', 'App\Http\Controllers\UsuarioController@Exibir_recover_password_senha')->name('exibir-recover-password-senha');
+
+    Route::get('/profile', 'App\Http\Controllers\UsuarioController@Exibir_profile')->name('exibir-profile');
 });
-Route::get('/register', function () {
-    return view('register');
-});
-Route::get('/recover-password', function () {
-    return view('rPassword');
-});
-Route::get('/recover-password-code', function () {
-    return view('rPasswordCode');
-});
-Route::get('/recover-password-new', function () {
-    return view('rPasswordInsert');
-});
+
+
+Route::get('/book-page', 'App\Http\Controllers\LivroController@Exibir_pagina_livro')->name('exibir-pagina-livro');
+
+Route::get('/rascunho-criacao', 'App\Http\Controllers\RascunhoController@Exibir_rascunho')->name('exibir-rascunho');

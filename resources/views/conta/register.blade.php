@@ -24,7 +24,7 @@
         div{
             /* border: solid 1px black; */
         }
-        #password_recovery{
+        #register{
             border-radius: 16px 16px 0 0;
         }
     </style>
@@ -37,33 +37,42 @@
             <div class="col">
                 <div class="row style-border d-flex justify-content-center" style="width:400px; height:400px; margin: 5% 33%" >
                     
-                    <div class="row mb-5 shadow" style="background-color: black;" id="password_recovery">
-                        <font color="white" class="d-flex justify-content-center">Password Recovery</font>
+                    <div class="row shadow" style="background-color: black;" id="register">
+                        <font color="white" class="d-flex justify-content-center">Registrar</font>
+                        
                     </div>
 
-                    <div class="row mt-4">
+                    <div class="row mt-5">
                         <div class="d-flex justify-content-center">
                             <label class="form-label"></label>
-                            <input type="password" class="form-control" id="password" style="width:80%; height:80%"placeholder="New Password">
+                            <input type="text" class="form-control" id="username" style="width:80%; height:80%"placeholder="Digite um Username">
                         </div>
                     </div>
 
-                    <div class="row mt-4">
+                    <div class="row ">
                         <div class="d-flex justify-content-center">
                             <label class="form-label"></label>
-                            <input type="password" class="form-control" id="password_confirm" style="width:80%; height:80%"placeholder="Confirm Password">
+                            <input type="email" class="form-control" id="email" style="width:80%; height:80%"placeholder="Digite um Email">
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="d-flex justify-content-center" >
-                            <font size="-1">Insert the new password</font>
+                    <div class="row ">
+                        <div class="d-flex justify-content-center">
+                        <label class="form-label"></label>
+                        <input type="password" class="form-control" id="password" style="width:80%; height:80%" placeholder="Digite uma Senha">
                         </div>
                     </div>
 
-                    <div class="row mb-4 d-flex justify-content-center">
+                    <div class="row ">
+                        <div class="d-flex justify-content-center">
+                        <label class="form-label"></label>
+                        <input type="password" class="form-control" id="confirm_password" style="width:80%; height:80%" placeholder="Confirme a senha">
+                        </div>
+                    </div>
+
+                    <div class="row mt-3 d-flex justify-content-center">
                         <button class="btn" type="submit" style="background-color:#F96513; width:70%; height:70%" id="confirm">
-                            <font size="+2"><b>Confirm</b></font>
+                            <font size="+2"><b>Confirmar</b></font>
                         </button>
                     </div>
                     

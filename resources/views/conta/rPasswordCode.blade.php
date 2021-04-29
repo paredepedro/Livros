@@ -24,7 +24,7 @@
         div{
             /* border: solid 1px black; */
         }
-        #login{
+        #password_recovery{
             border-radius: 16px 16px 0 0;
         }
     </style>
@@ -37,34 +37,26 @@
             <div class="col">
                 <div class="row style-border d-flex justify-content-center" style="width:400px; height:400px; margin: 5% 33%" >
                     
-                    <div class="row shadow" style="background-color: black;" id="login">
-                        <font color="white" class="d-flex justify-content-center">Login</font>
-                        
-                    </div>
-
-                    <div class="row mt-5">
-                        <div class="d-flex justify-content-center">
-                            <label class="form-label"></label>
-                            <input type="email" class="form-control" id="email" style="width:80%; height:80%"placeholder="Email or Username">
-                        </div>
+                    <div class="row mb-5 shadow" style="background-color: black;" id="password_recovery">
+                        <font color="white" class="d-flex justify-content-center">Recuperação de conta</font>
                     </div>
 
                     <div class="row mt-4">
                         <div class="d-flex justify-content-center">
-                        <label class="form-label"></label>
-                        <input type="password" class="form-control" id="password" style="width:80%; height:80%" placeholder="Password">
+                            <label class="form-label"></label>
+                            <input type="text" class="form-control" id="code" style="width:80%; height:80%"placeholder="xxxxx">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="d-flex justify-content-center" >
-                            <font size="-1" type="submit">forgot password</font>
+                            <font size="-1">Insira o código que foi enviado para seu email</font>
                         </div>
                     </div>
 
-                    <div class="row d-flex justify-content-center">
+                    <div class="row mb-4 d-flex justify-content-center">
                         <button class="btn" type="submit" style="background-color:#F96513; width:70%; height:70%" id="confirm">
-                            <font size="+2"><b>Confirm</b></font>
+                            <font size="+2"><b>Confirmar</b></font>
                         </button>
                     </div>
                     

@@ -38,25 +38,25 @@
                 <div class="row style-border d-flex justify-content-center" style="width:400px; height:400px; margin: 5% 33%" >
                     
                     <div class="row mb-5 shadow" style="background-color: black;" id="password_recovery">
-                        <font color="white" class="d-flex justify-content-center">Password Recovery</font>
+                        <font color="white" class="d-flex justify-content-center">Recuperação de conta</font>
                     </div>
 
                     <div class="row mt-4">
                         <div class="d-flex justify-content-center">
                             <label class="form-label"></label>
-                            <input type="email" class="form-control" id="email" style="width:80%; height:80%"placeholder="Enter Email">
+                            <input type="email" class="form-control" id="email" style="width:80%; height:80%"placeholder="Digite seu Email">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="d-flex justify-content-center" >
-                            <font size="-1">Please, insert your Email which we'll send the verification code</font>
+                            <font size="-1">Por favor, insira seu email para enviarmos o código de verificação</font>
                         </div>
                     </div>
 
                     <div class="row mb-4 d-flex justify-content-center">
                         <button class="btn" type="submit" style="background-color:#F96513; width:70%; height:70%" id="confirm">
-                            <font size="+2"><b>Confirm</b></font>
+                            <font size="+2"><b>Confirmar</b></font>
                         </button>
                     </div>
                     

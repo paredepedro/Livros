@@ -24,7 +24,7 @@
         div{
             /* border: solid 1px black; */
         }
-        #register{
+        #login{
             border-radius: 16px 16px 0 0;
         }
     </style>
@@ -37,40 +37,32 @@
             <div class="col">
                 <div class="row style-border d-flex justify-content-center" style="width:400px; height:400px; margin: 5% 33%" >
                     
-                    <div class="row shadow" style="background-color: black;" id="register">
-                        <font color="white" class="d-flex justify-content-center">Register</font>
+                    <div class="row shadow" style="background-color: black;" id="login">
+                        <font color="white" class="d-flex justify-content-center">Login</font>
                         
                     </div>
 
                     <div class="row mt-5">
                         <div class="d-flex justify-content-center">
                             <label class="form-label"></label>
-                            <input type="text" class="form-control" id="username" style="width:80%; height:80%"placeholder="Enter Username">
+                            <input type="email" class="form-control" id="email" style="width:80%; height:80%"placeholder="Email ou Username">
                         </div>
                     </div>
 
-                    <div class="row ">
-                        <div class="d-flex justify-content-center">
-                            <label class="form-label"></label>
-                            <input type="email" class="form-control" id="email" style="width:80%; height:80%"placeholder="Enter Email">
-                        </div>
-                    </div>
-
-                    <div class="row ">
+                    <div class="row mt-4">
                         <div class="d-flex justify-content-center">
                         <label class="form-label"></label>
-                        <input type="password" class="form-control" id="password" style="width:80%; height:80%" placeholder="Enter Password">
+                        <input type="password" class="form-control" id="password" style="width:80%; height:80%" placeholder="Senha">
                         </div>
                     </div>
 
-                    <div class="row ">
-                        <div class="d-flex justify-content-center">
-                        <label class="form-label"></label>
-                        <input type="password" class="form-control" id="confirm_password" style="width:80%; height:80%" placeholder="Confirm Password">
+                    <div class="row">
+                        <div class="d-flex justify-content-center" >
+                            <font size="-1" type="submit">esqueci a senha</font>
                         </div>
                     </div>
 
-                    <div class="row mt-3 d-flex justify-content-center">
+                    <div class="row d-flex justify-content-center">
                         <button class="btn" type="submit" style="background-color:#F96513; width:70%; height:70%" id="confirm">
                             <font size="+2"><b>Confirm</b></font>
                         </button>
