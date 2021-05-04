@@ -39,35 +39,36 @@
                     
                     <div class="row shadow" style="background-color: black;" id="login">
                         <font color="white" class="d-flex justify-content-center">Login</font>
-                        
                     </div>
 
-                    <div class="row mt-5">
-                        <div class="d-flex justify-content-center">
+                    <form method="POST" action="{{route('login-usuario')}}">
+                    @csrf
+                        <div class="row mt-5">
+                            <div class="d-flex justify-content-center">
+                                <label class="form-label"></label>
+                                <input type="email" class="form-control" id="email" style="width:80%; height:80%"placeholder="Email ou Username" name="email">
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="d-flex justify-content-center">
                             <label class="form-label"></label>
-                            <input type="email" class="form-control" id="email" style="width:80%; height:80%"placeholder="Email ou Username">
+                            <input type="password" class="form-control" id="password" style="width:80%; height:80%" placeholder="Senha" name="senha">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row mt-4">
-                        <div class="d-flex justify-content-center">
-                        <label class="form-label"></label>
-                        <input type="password" class="form-control" id="password" style="width:80%; height:80%" placeholder="Senha">
+                        <div class="row">
+                            <div class="d-flex justify-content-center" >
+                                <font size="-1" type="submit">esqueci a senha</font>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="d-flex justify-content-center" >
-                            <font size="-1" type="submit">esqueci a senha</font>
+                        <div class="row d-flex justify-content-center">
+                            <button class="btn" type="submit" style="background-color:#F96513; width:70%; height:70%" id="confirm">
+                                <font size="+2"><b>Confirm</b></font>
+                            </button>
                         </div>
-                    </div>
-
-                    <div class="row d-flex justify-content-center">
-                        <button class="btn" type="submit" style="background-color:#F96513; width:70%; height:70%" id="confirm">
-                            <font size="+2"><b>Confirm</b></font>
-                        </button>
-                    </div>
-                    
+                    </form>
                 </div>
             </div>
         </div>

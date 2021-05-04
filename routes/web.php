@@ -17,10 +17,15 @@ Route::get('/home-page', function () {
     return view('navegacao.homepage');
 });
 
-route::prefix('usuario')->groupe(function(){
+Route::get('/register', 'App\Http\Controllers\UsuarioController@Exibir_register')->name('exibir-register');
+
+
+Route::prefix('usuario')->group(function(){
     Route::get('/login', 'App\Http\Controllers\UsuarioController@Exibir_login')->name('exibir-login');
 
-    Route::get('/register', 'App\Http\Controllers\UsuarioController@Exibir_register')->name('exibir-register');
+    Route::post('save', 'App\Http\Controllers\UsuarioController@Save')->name('save-usuario');    
+
+    Route::post('login-acess', 'App\Http\Controllers\UsuarioController@Login')->name('login-usuario');  
 
     Route::get('/recover-password', 'App\Http\Controllers\UsuarioController@Exibir_recover_password')->name('exibir-recover-password');
 

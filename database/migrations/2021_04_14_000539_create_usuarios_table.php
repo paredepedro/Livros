@@ -16,17 +16,17 @@ class CreateUsuariosTable extends Migration
         Schema::create('usuarios', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string("nome");
+            $table->string("nome")->nullable();
             $table->string("nickname");
-            $table->integer("pontosAutor");
-            $table->integer("pontosAvaliador");
+            $table->integer("pontosAutor")->nullable();
+            $table->integer("pontosAvaliador")->nullable();
             $table->string("email");
             $table->string("senha");
 
             //chave-estrangeira
-            $table->unsignedBigInteger("id_autor");
+            $table->unsignedBigInteger("id_autor")->nullable();
             $table->foreign('id_autor')->references('id')->on('autores');
-            $table->unsignedBigInteger("id_livro");
+            $table->unsignedBigInteger("id_livro")->nullable();
             $table->foreign('id_livro')->references('id')->on('livros');
         });
     }
